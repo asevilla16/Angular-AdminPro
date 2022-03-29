@@ -1,3 +1,4 @@
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { RouterModule, Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
 
@@ -22,6 +23,10 @@ const routes: Routes = [
             {
                 path: 'grafica1',
                 component: Grafica1Component
+            },
+            {
+                path: 'account-settings',
+                component: AccountSettingsComponent
             },
             {
                 path: '',
