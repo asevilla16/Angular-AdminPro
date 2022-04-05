@@ -1,3 +1,5 @@
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { PromisesComponent } from './promises/promises.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { RouterModule, Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
@@ -14,19 +16,45 @@ const routes: Routes = [
         children: [
             {
                 path: 'dashboard',
-                component: DashboardComponent
+                component: DashboardComponent,
+                data: {
+                    title: 'Dashboard'
+                }
             },
             {
                 path: 'progress',
-                component: ProgressComponent
+                component: ProgressComponent,
+                data: {
+                    title: 'Progress'
+                }
             },
             {
                 path: 'grafica1',
-                component: Grafica1Component
+                component: Grafica1Component,
+                data: {
+                    title: 'Grafica'
+                }
             },
             {
                 path: 'account-settings',
-                component: AccountSettingsComponent
+                component: AccountSettingsComponent,
+                data: {
+                    title: 'Account Settings'
+                }
+            },
+            {
+                path: 'promises',
+                component: PromisesComponent,
+                data: {
+                    title: 'Promesas'
+                }
+            },
+            {
+                path: 'rxjs',
+                component: RxjsComponent,
+                data: {
+                    title: 'RXJS'
+                }
             },
             {
                 path: '',
